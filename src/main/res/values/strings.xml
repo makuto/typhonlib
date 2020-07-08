@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- download message box -->
+    <string name="dm_dict_message">You need to download the Japanese dictionary for this
+        reader to show definitions of words (~85 mb download)
+    </string>
+    <string name="dm_dict_update_message">A new version of the Japanese dictionary is available.
+    </string>
+    <string name="dm_dict_title">Download Dictionary</string>
+    <string name="dm_dict_update_title">Update Dictionary</string>
+    <string name="dm_dict_yes">Download</string>
+    <string name="dm_dict_no">Cancel</string>
+    <string name="dm_dict_success">Download successful</string>
+    <string name="dm_dict_failed">Download failed</string>
+    <string name="dm_dict_downloading">Downloading the dictionary database</string>
+    <string name="dm_dict_unzipping">Extracting the dictionary. \nThis may take a while.</string>
+    <string name="dm_dict_unzip_failed">Failed to extract</string>
+    <string name="dm_dict_unzip_success">Extract successful</string>
+    <string name="dm_dict_failed_to_load">Failed to load the dictionary. Do you want to delete the
+        dictionary data and re-download the dictionary?
+    </string>
+    <string name="dm_dict_alternate_download_address">There was an error while downloading the file. If the problem persists, go to https://github.com/benjamarle/typhon in the issue section for support.\nSorry for the inconvenience.
+    </string>
+
+    <!-- message box -->
+    <string name="msg_ok">OK</string>
+    <string name="msg_yes">Yes</string>
+    <string name="msg_no">No</string>
+    <string name="msg_cancel">Cancel</string>
+    <string name="msg_default">Default</string>
+    <string name="msg_try_again">Try Again</string>
+
+
+    <string name="anki_not_installed">AnkiDroid is not installed</string>
+    <string name="anki_card_add_not_supported">Adding Anki notes is not supported for this type of dictionary.</string>
+    <string name="anki_permission_denied">Permission denied to add new notes in AnkiDroid</string>
+    <string name="anki_card_add_fail">Failed to add new note in AnkiDroid</string>
+    <string name="anki_card_added">Successfully added note to AnkiDroid:  %s !</string>
+    <string name="anki_card_already_added">Card already present in AnkiDroid</string>
+
+    <string name="dictionary_confirm_delete_title">Delete dictionary</string>
+    <string name="dictionary_confirm_delete_msg">Are you sure you want to delete [%s]?</string>
+
+    <string name="dictionary_choose_type">Choose dictionary type:</string>
+    <string name="dictionary_add_success">Dictionary successfully added : %s</string>
+    <string name="dictionary_settings">Dictionary settings</string>
+    <string name="dictionary_settings_summary">Add, remove, reorder and configure the dictionaries</string>
+    <string name="dictionary_remove_success">Dictionary successfully removed !</string>
+
+    <string name="dictionary_edit_form_name">Name</string>
+    <string name="dictionary_edit_form_type">Type</string>
+    <string name="dictionary_edit_title">Edit dictionary</string>
+    <string name="dictionary_edit_form_heisig6">Heisig 6th</string>
+    <string name="dictionary_edit_form_synonyms">Show synonyms</string>
+    <string name="dictionary_edit_form_examples">Show examples</string>
+    <string name="dictionary_edit_form_deinflect">Deinflect verbs</string>
+    <string name="dictionary_edit_form_lang">Language</string>
+    <string name="dictionary_epwing_loading_error">The dictionary failed to load with the following error : %s</string>
+    <string name="dictionary_epwing_load_success">The dictionary was successfully loaded!</string>
+    <string name="pref_anki_deck_name_summary">Anki deck name for vocabulary card creation</string>
+    <string name="pref_anki_deck_name">Anki deck name</string>
+    <string name="pref_anki_deck_name_message">Please enter the name of the deck you want to use to create vocabulary cards. If it does not exist, the deck will be created.</string>
+
+    <string name="pref_anki_deck_name_default">Typhon vocabulary</string>
+    <string name="pref_furigana_summary">Display furigana (experimental)</string>
+    <string name="pref_furigana">Furigana</string>
+
+    <string name="save">Save changes</string>
+
+    <string name="action_cancel">Cancel</string>
+    <string name="browse">Browse…</string>
+
+    <string name="close_button">X</string>
+    <string name="drag_symbol">...</string>
+
+    <string name="action_delete">Delete</string>
+</resources>

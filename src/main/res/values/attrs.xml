@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DraggablePane">
+        <attr name="bar_height" format="dimension"/>
+        <attr name="close_button_width" format="dimension"/>
+        <attr name="background_color" format="reference|color"/>
+        <attr name="drag_color" format="reference|color"/>
+        <attr name="initial_height" format="dimension"/>
+        <attr name="base_text_size" format="dimension|integer"/>
+        <attr name="show_bar" format="boolean"/>
+    </declare-styleable>
+</resources>

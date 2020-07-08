@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.zorgblub.rikai">
+    <application>
+        <activity android:name="org.zorgblub.rikai.download.settings.ui.DictionaryConfigActivity"
+
+            >
+            <intent-filter>
+                <action android:name="org.zorgblub.rikai.download.settings.ui.DictionaryConfigActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>
