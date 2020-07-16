@@ -11,12 +11,17 @@ import android.widget.Toast;
 
 import org.rikai.dictionary.Dictionary;
 import org.zorgblub.rikai.R;
+import org.zorgblub.rikai.download.settings.DictionarySettings;
 import org.zorgblub.rikai.download.settings.EpwingSettings;
+import org.zorgblub.rikai.download.settings.ui.OnFileChosenListener;
+import org.zorgblub.rikai.download.settings.ui.TyphonFileChooser;
+
+import java.io.File;
 
 /**
  * Created by Benjamin on 03/04/2016.
  */
-public class EpwingConfigDialog extends DictionaryConfigDialog<EpwingSettings> {
+public class EpwingConfigDialog extends DictionaryConfigDialog<EpwingSettings> implements OnFileChosenListener {
 
     protected EditText pathEditText;
 
@@ -39,18 +44,21 @@ public class EpwingConfigDialog extends DictionaryConfigDialog<EpwingSettings> {
         Button browseButton = (Button) findViewById(R.id.browse_epwing_button);
 
         browseButton.setOnClickListener(v -> {
-            Intent intent = null; //TODO new Intent(getContext(), FileBrowseActivity.class);
-            intent.setData(Uri.parse(pathEditText.getText().toString()));
-            Activity activity = getOwnerActivity();
-            activity.startActivityForResult(intent, 0);
+            TyphonFileChooser fileChooser = DictionarySettings.getFileChooser();
+            if(fileChooser == null)
+                return;
+
+            fileChooser.startFileChooser(this, this.getOwnerActivity());
         });
     }
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if ( resultCode == Activity.RESULT_OK && data != null ) {
-            pathEditText.setText(data.getData().getPath());
+    public void onFileChosen(File file) {
+        String path = "";
+        if(file != null){
+            path = file.getPath();
         }
+        pathEditText.setText(path);
     }
 
     @Override

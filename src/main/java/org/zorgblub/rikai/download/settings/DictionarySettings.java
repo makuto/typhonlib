@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Environment;
 
 import org.rikai.dictionary.Dictionary;
+import org.zorgblub.rikai.download.settings.ui.TyphonFileChooser;
 import org.zorgblub.rikai.download.settings.ui.dialog.DictionaryConfigDialog;
 
 import java.io.File;
@@ -18,8 +19,11 @@ public abstract class DictionarySettings {
 
     protected static Context context = null;
 
-    public static void setContext(Context ctx){
+    protected static TyphonFileChooser fileChooser = null;
+
+    public static void setup(Context ctx, TyphonFileChooser chooser){
         context = ctx;
+        fileChooser = chooser;
     }
 
     private static String DATA_PATH = "/dict_data";
@@ -88,5 +92,9 @@ public abstract class DictionarySettings {
     @Override
     public String toString() {
         return getName();
+    }
+
+    public static TyphonFileChooser getFileChooser() {
+        return fileChooser;
     }
 }
