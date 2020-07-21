@@ -130,7 +130,7 @@ public class DictionaryConfigFragment extends Fragment {
         public void onBindDragView(View clickedView, View dragView) {
             CharSequence text = ((TextView) clickedView.findViewById(R.id.dictionary_item_text)).getText();
             ((TextView) dragView.findViewById(R.id.dictionary_item_text)).setText(text);
-            dragView.setBackgroundColor(dragView.getResources().getColor(R.color.dark_grey));
+            dragView.setBackgroundColor(dragView.getResources().getColor(R.color.opaque_white));
         }
     }
 }
