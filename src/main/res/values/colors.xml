@@ -7,17 +7,17 @@
     <color name="orange">#ff5500</color>
 
     <color name="black_overlay">#66000000</color>
-    <color name="kanji">#B7E7FF</color>
-    <color name="kana">#C0FFC0</color>
-    <color name="definition">#FFFFFF</color>
-    <color name="example">#AAAAAA</color>
-    <color name="synonym">#C0FFC0</color>
-    <color name="reason">#FFE0A0</color>
-    <color name="partOfSpeech">#AAE5A5</color>
+    <color name="kanji">#000000</color>
+    <color name="kana">#000000</color>
+    <color name="definition">#000000</color>
+    <color name="example">#000000</color>
+    <color name="synonym">#000000</color>
+    <color name="reason">#000000</color>
+    <color name="partOfSpeech">#000000</color>
     <color name="index">#FFE0A0</color>
 
     <color name="transparent">#00000000</color>
-    <color name="control_background">#C7000000</color>
-    <color name="default_def_bg_color">#C7000000</color>
+    <color name="control_background">#C7FFFFFF</color>
+    <color name="default_def_bg_color">#C7FFFFFF</color>
     <color name="default_def_text_color">#ffffff</color>
 </resources>

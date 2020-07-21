@@ -193,7 +193,7 @@ public class DraggablePane extends RelativeLayout implements View.OnTouchListene
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (v == mDragBar) {
-            int dark = 0xB7000000;
+            int dark = 0xB7cccccc;
 
             switch (event.getAction()) {
                 case MotionEvent.ACTION_DOWN:

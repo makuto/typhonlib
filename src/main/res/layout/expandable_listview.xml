@@ -38,8 +38,8 @@ Date: 2013 04 26
             android:layout_gravity="top"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:textColor="#aaffffff"
-            android:background="@color/opaque_black"/>
+            android:textColor="#aa000000"
+            android:background="@color/opaque_white"/>
     </androidx.viewpager.widget.ViewPager>
     <!--  android:fadeScrollbars="false" always shows scrollbar -->
 
@@ -49,7 +49,7 @@ Date: 2013 04 26
             android:visibility="invisible"
             android:text="@string/close_button"
             android:textSize="15sp"
-            android:textColor="#aaffffff"
+            android:textColor="#aa000000"
             android:background="@color/transparent"
             android:paddingRight="5dp"
             android:layout_alignParentTop="true"
@@ -58,7 +58,7 @@ Date: 2013 04 26
     <Button android:id="@+id/gloss_drag"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:textColor="#aaffffff"
+            android:textColor="#aa000000"
             android:text="@string/drag_symbol"
             android:textSize="15sp"
             android:gravity="center"
